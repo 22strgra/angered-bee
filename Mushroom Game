@@ -1,0 +1,122 @@
+import time
+import random
+
+time.sleep(1)
+
+villageName = input("Hello traveler! What village do you travel from? ")
+
+print("You are about to embark on a journey through the land of Boletus! You have traveled from the village:",villageName,"You must collect 10 mushrooms of one type to make your dinner for the night.")
+
+time.sleep(3)
+
+userName = input("Before you set off, what do I call you? ")
+
+time.sleep(1)
+
+print("Let's try it out! Hello,",userName+".")
+
+time.sleep(1)
+
+def userGender (): 
+   while True :
+     gender = input("What is your gender? ")
+     if gender in ["Male","male","boy","Boy", "Other", "other"]:
+       gender = 0
+     elif gender in ["Female","female","girl","Girl", "Other", "other"]:
+       gender = 1
+     else : 
+       print("Please tell me your gender! ")
+       continue 
+     return gender 
+
+gender = playerGender()
+
+time.sleep(1)
+
+print("We may begin...")
+
+time.sleep(3)
+
+print("What biome will you choose? Each yields a different type of mushroom.")
+print("Oak Grove") #Hen of the Woods Mushrooms
+print("Hardwood Forest") #Chantrelle Mushrooms
+print("Decaying Forest") #Turkey Tail Mushrooms
+print("Conifer Cove") #Birch Bolete Mushrooms
+print("Trunk Trove") #Oyster Mushrooms
+
+shroomChoice = input()
+while True :
+   if shroomChoice in ["Oak Grove","oak grove","Oak grove", "oak Grove"]:
+     print("Nice! You have chosen to enter the Oak Grove. It is your goal to collect 10 Hen of the Wood mushrooms.")
+   elif shroomChoice in ["Hardwood Forest","hardwood forest","Hardwood forest", "hardwood Forest"]:
+      print("Nice! You have chosen to enter the Hardwood Forest. It is your goal to collect 10 Chantrelle Mushrooms.")
+   elif shroomChoice in ["Decaying Forest","decaying forest","Decaying forest", "decaying Forest"]:
+      print("Nice! You have chosen to enter the Decaying Forest. It is your goal to collect 10 Turkey Tail Mushrooms.")
+   elif shroomChoice in ["Conifer Cove","conifer cove","Conifer cove", "conifer Cove"]:
+      print("Nice! You have chosen to enter Conifer Cove. It is your gaol to collect 10 Birch Bolete Mushrooms.")
+   elif shroomChoice in ["Trunk Trove","trunk trove","Trunk trove", "trunk Trove"]:
+      print("Nice! You have chosen to enter the Trunk Trove. It is your gaol to collect 10 Oyster Mushrooms.")
+   else:
+     print("That is not a biome in The Land of Boletus.")
+     continue
+   break 
+
+time.sleep(3)
+
+if shroomChoice in ["Oak Grove","oak grove","Oak grove", "oak Grove"]:
+   print("As you know, in entering the Oak Grove, it is your duty to collect 10 Hen of the Wood Mushrooms. They will be roasted until golden brown and crisp.")
+   shroomChoice = "oak grove"
+elif shroomChoice in ["Hardwood Forest","hardwood forest","Hardwood forest", "hardwood Forest"]:
+   print("As you know, in entering the Hardwood Forest, it is your duty to collect 10 Chantrelle Mushrooms. They will be served with lemon on toast.")
+   shroomChoice = "hardwood forest"
+elif shroomChoice in ["Decaying Forest","decaying forest","Decaying forest", "decaying Forest"]:
+  print("As you know, in entering the Decaying Forest, it is your duty to collect 10 Turkey Tail mushrooms. They will be dehyrdated and served in medicinal tea.")
+  shroomChoice = "decaying forest" 
+elif shroomChoice in ["Conifer Cove","conifer cove","Conifer cove", "conifer Cove"]:
+   print("As you know, in entering the Conifer Cove, it is your duty to collect 10 Birch Bolete Mushrooms. They will be served in soup with potatoes and carrots.")
+   shroomChoice = "conifer cove"
+elif shroomChoice in ["Trunk Trove","trunk trove","Trunk trove", "trunk Trove"]:
+   print("As you know, in entering Trunk Trove, it is your duty to collect 10 Oyster Mushrooms. They will be fried and served with green onions.")
+   shroomChoice = "trunk trove"
+
+
+def goalOne():
+   timeLeft = 2
+   while  timeLeft > 0:
+     print("After leaving",villageName,"you have decided to enter the", shroomChoice, "biome.")
+     print("You are standing at the entrance of your chosen biome. From here, you have three directions you can choose to go: left, right, and straight. Each of them will give you a chance to collect a mushroom. You may encounter poisonous mushrooms. They will harm you. As night is emerging, you will have a limited amount of time to collect the mushrooms.")  
+     userDirection = direction() 
+     if playerDirection == "left":
+       time.sleep(1)
+      
+           
+     elif playerDirection == "right":
+       time.sleep(1)
+       
+        
+     elif playerDirection == "straight":
+       time.sleep(1)
+      
+       elif playerDirection =="back":
+         continue 
+     break 
+
+def direction ():  
+   while True :
+     playerDirection = input("What direction will you go in? ")
+     if playerDirection in ["left","Left"]:
+       playerDirection = "left"
+     elif playerDirection in ["right","Right"]:
+       playerDirection = "right"
+     elif playerDirection in ["straight","Straight"]:
+       playerDirection = "straight"
+     elif playerDirection in ["Back","go back","Go back"]:
+       playerDirection = "back"
+     else:  
+       print("You can't go that way!")
+       continue
+     return playerDirection 
+
+def ():
+   
+     
